@@ -1,6 +1,7 @@
 {
   "name": "taskboard-api",
   "version": "1.0.0",
+   "type": "module",
   "description": "a RESTful API for a task/project management system with users, projects and tasks. we will implement endpoints validation, authentication, reporting, and testing.\r -=keep in mind that this will be used as a guide to learn",
   "main": "index.js",
   "scripts": {

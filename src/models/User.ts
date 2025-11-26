@@ -1,5 +1,6 @@
-import mongoose, {Schema, Document} from 'mongoose';
-import {IUser} from '../types/user';
+//file location: models/user.ts
+import mongoose, { Schema, Document, type Types, type Model} from 'mongoose';
+import {type IUser} from '../types/user';
 
 export interface IUserDocument extends IUser, Document {}
 
@@ -19,8 +20,8 @@ const userSchema = new Schema<IUserDocument>({
         match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email']
     },
     passwordHash: {
-        required: true,
-        type: String
+        type: String,
+        required: true
     },
     role: {
         type: String,
