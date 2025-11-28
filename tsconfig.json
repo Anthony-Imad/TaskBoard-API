@@ -41,5 +41,9 @@
     "moduleDetection": "force",
     "moduleResolution": "Node",
     "skipLibCheck": true,
+
+    //ts configuration
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   }
 }

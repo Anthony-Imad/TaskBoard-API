@@ -31,7 +31,7 @@ const userSchema = new Schema<IUserDocument>({
     createdAt: {
         type: Date,
         default: Date.now
-    }
+    }, 
 })
 
 export const User = mongoose.model<IUserDocument>('User', userSchema);  
